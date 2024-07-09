@@ -1,6 +1,12 @@
 // import { name } from "./msg.js"
-console.log("hello");
-console.log("world");
+import {name, age} from "./msg.js"
+
+function say() {
+    console.log("hello", name)
+}
+say()
+// console.log("hello");
+// console.log("world");
 // console.log(name)
 /**
  * expand 展开
