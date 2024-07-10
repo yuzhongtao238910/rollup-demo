@@ -1,4 +1,4 @@
-import { name, age } from './msg.js'
+const name = "apple"
 function say() {
 	console.log('hello', name)
 }
