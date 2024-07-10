@@ -1,5 +1,5 @@
-import {name, age} from "./msg.js"
+import { name, age } from './msg.js'
 function say() {
-    console.log("hello", name)
+	console.log('hello', name)
 }
 say()

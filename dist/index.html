@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			let root = {
+				name: '11',
+				children: [
+					{
+						name: '22',
+						children: [
+							{
+								name: '44',
+							},
+							{
+								name: '55',
+							},
+						],
+					},
+					{
+						name: '33',
+						children: [
+							{
+								name: '66',
+							},
+							{
+								name: '77',
+							},
+						],
+					},
+				],
+			}
+
+			function dfs(array) {
+				// debugger
+				for (let i = 0; i < array.length; i++) {
+					const node = array[i]
+					if (Array.isArray(node.children) && node.children.length) {
+						dfs(node.children)
+					}
+					console.log(node.name)
+				}
+			}
+			dfs([root])
+		</script>
+	</body>
+</html>
